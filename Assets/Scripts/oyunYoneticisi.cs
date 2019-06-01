@@ -8,6 +8,7 @@ public class oyunYoneticisi : MonoBehaviour
 {
     GameObject donenCember;
     GameObject anaCember;
+    GameObject engel;
 
     bool YeniLeveleGecilsinmi = true;
 
@@ -25,6 +26,7 @@ public class oyunYoneticisi : MonoBehaviour
 
         donenCember = GameObject.FindGameObjectWithTag("donenCemberTag");
         anaCember = GameObject.FindGameObjectWithTag("anaCemberTag");
+        engel = GameObject.FindGameObjectWithTag("engelTag");
         DonenCemberLevel.text = SceneManager.GetActiveScene().name;
 
         if (KacTaneKucukCemberOlsun<2)
@@ -78,6 +80,8 @@ public class oyunYoneticisi : MonoBehaviour
     {
         donenCember.GetComponent<dondurme>().enabled = false;
         anaCember.GetComponent<anaCember>().enabled = false;
+        engel.GetComponent<EngelScript>().enabled = false;
+
 
         yield return new WaitForSeconds(0.5f);
 
@@ -100,6 +104,7 @@ public class oyunYoneticisi : MonoBehaviour
     {
         donenCember.GetComponent<dondurme>().enabled = false;
         anaCember.GetComponent<anaCember>().enabled = false;
+        engel.GetComponent<EngelScript>().enabled = false;
         animator.SetTrigger("oyunBittiAnim");
         YeniLeveleGecilsinmi = false;
 

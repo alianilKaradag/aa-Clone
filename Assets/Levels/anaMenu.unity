@@ -581,7 +581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aa Clone
+  m_Text: ab Game
 --- !u!222 &803951502
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -966,5 +966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2945851654992115963, guid: e7bbe416603087a4dafb94f93e32982b,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f35e7f5dfdce14476acf8a0e56e22f24, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7bbe416603087a4dafb94f93e32982b, type: 3}

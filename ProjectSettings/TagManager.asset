@@ -8,6 +8,10 @@ TagManager:
   - anaCemberTag
   - oyunYoneticisiTag
   - kucukCemberTag
+  - engelTag
+  - sagColliderTag
+  - solColliderTag
+  - engelCemberTag
   layers:
   - Default
   - TransparentFX

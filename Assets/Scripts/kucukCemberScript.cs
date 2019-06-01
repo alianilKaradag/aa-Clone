@@ -6,7 +6,7 @@ public class kucukCemberScript : MonoBehaviour
 {
     public float hiz;
 
-    bool hareketKontrol = false;
+    bool hareketEtsinMi = true;
 
     Rigidbody2D fizik;
     GameObject oyunYoneticisiScript;
@@ -20,7 +20,7 @@ public class kucukCemberScript : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (!hareketKontrol)
+        if (hareketEtsinMi)
         {
             fizik.MovePosition(fizik.position + Vector2.up * Time.deltaTime * hiz);
         }
@@ -33,11 +33,19 @@ public class kucukCemberScript : MonoBehaviour
         if (col.tag == "donenCemberTag")
         {
             transform.SetParent(col.transform);
-            hareketKontrol = true;
+            hareketEtsinMi = false;
         }
 
         if (col.tag == "kucukCemberTag")
         {
+            oyunYoneticisiScript.GetComponent<oyunYoneticisi>().OyunBitti();
+        }
+
+        if (col.tag == "engelTag")
+        {
+            transform.localScale = new Vector3(2,2,2);
+            transform.SetParent(col.transform);
+            hareketEtsinMi = false;
             oyunYoneticisiScript.GetComponent<oyunYoneticisi>().OyunBitti();
         }
     }

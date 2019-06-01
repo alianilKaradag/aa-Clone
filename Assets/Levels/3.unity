@@ -189,5 +189,10 @@ PrefabInstance:
       propertyPath: KacTaneKucukCemberOlsun
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1297595332673766885, guid: 13e2892c334ac0e42a5d3ba352d82fdd,
+        type: 3}
+      propertyPath: hiz
+      value: 5.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e2892c334ac0e42a5d3ba352d82fdd, type: 3}

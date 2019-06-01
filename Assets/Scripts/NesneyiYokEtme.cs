@@ -16,24 +16,24 @@ public class NesneyiYokEtme : MonoBehaviour
         
     }
 
-    private static NesneyiYokEtme instance = null;          // müziğin sahneler arası geçişte devam etmesi için bu scripti yazdık..
+    private static NesneyiYokEtme ornek = null;          /// müziğin sahneler arası geçişte devam etmesi için bu scripti yazdık..
 
-    public static NesneyiYokEtme Instance
+    public static NesneyiYokEtme Ornek
     {
-        get { return instance; }
+        get { return ornek; }
     }
 
     private void Awake()
     {
-        if(instance!=null && instance != this)
+        if(ornek!=null && ornek != this)
         {
             Destroy(this.gameObject);
             return;
         }
         else
         {
-            instance = this;
+            ornek = this;
         }
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);                 ///
     }
 }

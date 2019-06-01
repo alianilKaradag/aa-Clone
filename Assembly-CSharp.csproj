@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\anaCember.cs" />
     <Compile Include="Assets\Scripts\dondurme.cs" />
+    <Compile Include="Assets\Scripts\engelCemberScript.cs" />
+    <Compile Include="Assets\Scripts\EngelScript.cs" />
     <Compile Include="Assets\Scripts\kucukCemberScript.cs" />
     <Compile Include="Assets\Scripts\MenuKontrol.cs" />
     <Compile Include="Assets\Scripts\NesneyiYokEtme.cs" />
