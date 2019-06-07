@@ -12,6 +12,7 @@ TagManager:
   - sagColliderTag
   - solColliderTag
   - engelCemberTag
+  - engel2Tag
   layers:
   - Default
   - TransparentFX

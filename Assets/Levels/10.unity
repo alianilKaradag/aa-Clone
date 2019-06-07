@@ -119,6 +119,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4946428263032646669, guid: 13e2892c334ac0e42a5d3ba352d82fdd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8924740810664900731, guid: 13e2892c334ac0e42a5d3ba352d82fdd,
         type: 3}
       propertyPath: m_Name
@@ -187,7 +192,7 @@ PrefabInstance:
     - target: {fileID: 7754243663496371225, guid: 13e2892c334ac0e42a5d3ba352d82fdd,
         type: 3}
       propertyPath: KacTaneKucukCemberOlsun
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1297595332673766885, guid: 13e2892c334ac0e42a5d3ba352d82fdd,
         type: 3}

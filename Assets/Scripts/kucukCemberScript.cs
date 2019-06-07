@@ -48,5 +48,12 @@ public class kucukCemberScript : MonoBehaviour
             hareketEtsinMi = false;
             oyunYoneticisiScript.GetComponent<oyunYoneticisi>().OyunBitti();
         }
+        if (col.tag == "engel2Tag")
+        {
+            transform.localScale = new Vector3(2, 2, 2);
+            transform.SetParent(col.transform);
+            hareketEtsinMi = false;
+            oyunYoneticisiScript.GetComponent<oyunYoneticisi>().OyunBitti();
+        }
     }
 }

@@ -20,6 +20,6 @@ public class tebriklerScript : MonoBehaviour
     public void anaMenuyeGit()
     {
         SceneManager.LoadScene("anaMenu");
-        PlayerPrefs.DeleteAll();            //level kayitlarimizi siliyoruz
+                 
     }
 }

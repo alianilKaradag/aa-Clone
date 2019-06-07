@@ -20,6 +20,11 @@ public class MenuKontrol : MonoBehaviour
         }
         
     }
+    public void LevelleriSifirla()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+   
 
     public void Cik()
     {
